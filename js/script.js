@@ -41,8 +41,11 @@ var classe = [
 
 // 4 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
-for (var j in classe) {
-  console.log(classe[j]);
+// for (var j in classe) {
+//   console.log(classe[j]);
+// }
+for (var i = 0; i < classe.length; i++) {
+  console.log(classe[i]);
 }
 
 
