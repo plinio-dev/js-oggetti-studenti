@@ -23,31 +23,32 @@ for (var key in studente1) {
 var classe = [
   {
     'nome': 'Luca',
-    'cognome': 'Rossi'
+    'cognome': 'Rossi',
+    'eta': 18
   },
   {
     'nome': 'Giorgio',
-    'cognome': 'Bianchi'
+    'cognome': 'Bianchi',
+    'eta': 25
   },
   {
     'nome': 'Tania',
-    'cognome': 'Piccoli'
+    'cognome': 'Piccoli',
+    'eta': 35
   },
   {
     'nome': 'Marta',
-    'cognome': 'Recchi'
+    'cognome': 'Recchi',
+    'eta': 24
   }
 ]
 
 // 4 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
 
-// for (var j in classe) {
-//   console.log(classe[j]);
-// }
-for (var i = 0; i < classe.length; i++) {
-  console.log(classe[i]);
-}
 
+for (var i = 0; i < classe.length; i++) {
+  document.getElementById("classe").innerHTML += classe[i].nome + " " + classe[i].cognome + " " + classe[i].eta + "<br>";
+}
 
 // 5 Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
@@ -67,4 +68,5 @@ console.log(nuovoUtente);
 // 6 inserire il nuovo utente nella classe studenti
 classe.push(nuovoUtente);
 
-console.log(classe);
+
+document.getElementById("classe").innerHTML += nuovoUtente.nome + " " + nuovoUtente.cognome + " " + nuovoUtente.eta;
