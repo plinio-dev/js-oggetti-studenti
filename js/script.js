@@ -11,3 +11,11 @@ var studente1 = {
   'cognome': 'Rossi',
   'età' : 25
 }
+console.log(studente1);
+
+// 2 Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
+for (var key in studente1) {
+  alert(studente1[key]);
+}
+
+// 3 Creare un array di oggetti di studenti.
