@@ -15,7 +15,51 @@ console.log(studente1);
 
 // 2 Stampare a schermo attraverso un ciclo for-in tutte le proprietà dell'oggetto.
 for (var key in studente1) {
-  alert(studente1[key]);
+  console.log(studente1[key]);
 }
 
 // 3 Creare un array di oggetti di studenti.
+
+var studenti = [
+  {
+    'nome': 'Luca',
+    'cognome': 'Rossi'
+  },
+  {
+    'nome': 'Giorgio',
+    'cognome': 'Bianchi'
+  },
+  {
+    'nome': 'Tania',
+    'cognome': 'Piccoli'
+  },
+  {
+    'nome': 'Marta',
+    'cognome': 'Recchi'
+  }
+]
+
+// 4 Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+
+for (var j in studenti) {
+  console.log(studenti[j]);
+}
+
+
+// 5 Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+var nuovoUtente = {
+  'nome': '',
+  'cognome': ''
+}
+console.log(nuovoUtente);
+
+var nome = prompt("Come ti chiami?");
+var cognome = prompt("Qual'è il tuo cognome?");
+var eta = prompt("Quanti anni hai?");
+
+nuovoUtente["nome"] = nome;
+nuovoUtente["cognome"] = cognome;
+nuovoUtente["eta"] = eta;
+
+console.log(nuovoUtente);
